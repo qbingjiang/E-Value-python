@@ -63,5 +63,5 @@ if __name__ == "__main__":
     ### compute E-values for OR = 0.86 with CI: [0.75, 0.99]
     a = cal_E_values(rr=0.86, lower=0.75, upper=0.99, whichr='or', ifrare=False) 
     e_value_for_table = str(a[0]) + '('+ str(a[1]) + '-' + str(a[2]) + ')'
-    print("E-value with CI", e_value_for_table)
+    print("E-value with CI: ", e_value_for_table)
     print('\n')

@@ -1,9 +1,19 @@
 import math
-def cal_E_values(rr, lower=None, upper=None, whichr='or', ifrare=False): 
+def cal_E_values(rr, lower=None, upper=None, whichr=None, ifrare=False): 
     '''
     calculate the e-value with its CI of 'Risk ratio, Odds ratio , hazard ratio'
     ref::
-    [1]Sensitivity Analysis in Observational Research: Introducing the E-Value
+    [1]Sensitivity Analysis in Observational Research: Introducing the E-Value 
+    inputs:: 
+        rr
+        lower and upper::  confidence interval
+        whichr::    None: Risk ratio
+                    'or': odds ratio　
+                    'hr': hazard ratio
+        ifrare:: if outcome is rare
+    outputs:: 
+        E-value with CI
+        
     ''' 
     print(rr, lower, upper, '------>' )
     if rr>1: 
